@@ -15,7 +15,7 @@ function es_par_impar(numero_parametro) {
       console.log('no es primo')
     }
   } else {
-    pContenido.textContent = "Ingrese un numero valido que sea diferente de cero.";
+    pContenido.textContent = "Ingrese un numero valido y que sea diferente de cero.";
   }
 
   
@@ -24,11 +24,12 @@ function es_par_impar(numero_parametro) {
 function es_primo (numero) {
   if (numero === 1) {
     return false
-  }
-  for (let i = 2; i < numero; i++) {
-    if (numero % i === 0) {
-      return false
+  } else {
+    for (let i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        return false
+      }
     }
+    return true
   }
-  return true
 }
