@@ -1,9 +1,9 @@
 document.getElementById("verificar").addEventListener("click", function () {
   let numero = document.getElementById("numero").value;
-  es_par_impar(numero);
+  primo_visualizar(numero);
 });
 
-function es_par_impar(numero_parametro) {
+function primo_visualizar(numero_parametro) {
   let pContenido = document.getElementById("resultado");
   let numero = parseInt(numero_parametro);
   if (!isNaN(numero) && 0 < numero) {
