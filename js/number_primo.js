@@ -6,7 +6,7 @@ document.getElementById("verificar").addEventListener("click", function () {
 function es_par_impar(numero_parametro) {
   let pContenido = document.getElementById("resultado");
   let numero = parseInt(numero_parametro);
-  if (numero) {
+  if (!isNaN(numero) && 0 < numero) {
     if (es_primo(numero)) {
       pContenido.textContent = `Es primo`;
       console.log('es primo')
@@ -15,7 +15,7 @@ function es_par_impar(numero_parametro) {
       console.log('no es primo')
     }
   } else {
-    pContenido.textContent = "Ingrese un numero valido.";
+    pContenido.textContent = "Ingrese un numero valido que sea diferente de cero.";
   }
 
   
